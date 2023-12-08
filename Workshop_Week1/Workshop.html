@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangeet - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Your Name</h1>
+        <p>Web Developer</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#interests">Interests</a>
+        <a href="#contact">Contact</a>
+        <div class="menu-icon">
+            <a href="javascript:void(0);" onclick="toggleNav()">☰ Menu</a>
+        </div>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm Sangeet Raut—a dedicated student and avid tech enthusiast, seamlessly blending academia with a passion for technology. With an insatiable curiosity, I approach education with diligence, navigating challenges and applying concepts to real-world scenarios. Beyond textbooks, my hunger for knowledge extends into various subjects, propelling me to explore and broaden my intellectual horizons.
+
+            As a tech enthusiast, I immerse myself in the ever-evolving world of technology. From the latest innovations to emerging trends, I stay ahead of the curve, experimenting with programming languages, gadgets, and software development intricacies. Actively participating in tech communities and events, I collaborate with like-minded individuals, believing in the power of innovation and collaboration for progress.
+            
+            My journey is a testament to an unwavering commitment to excellence, and I am poised to make significant contributions to both academia and the tech landscape, leaving an indelible mark on the world around me..</p>
+    </section>
+
+    <section id="education">
+        <h2>Education History</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sn.</th>
+                    <th>Name of Institution</th>
+                    <th>Degree/Course</th>
+                    <th>Years Attended</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Nepal APF School</td>
+                    <td>SEE</td>
+                    <td>2017-2020</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Kathmandu Model Secondary School</td>
+                    <td>Higher Secondary</td>
+                    <td>2021-2023</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="interests">
+        <h2>Interests and Hobbies</h2>
+        <ul>
+            <li>Gaming</li>
+            <li>Reading books</li>
+            <li>Watching movies</li>
+            <li>Travelling</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Sangeet Raut - All Rights Reserved</p>
+        <h4>Connect with me on <a href="https://www.instagram.com/sangeet_raut/">Instagram</a> & <a href="https://github.com/SaN078">Github</a></h4>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            var x = document.querySelector("nav a");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>
