@@ -1,0 +1,47 @@
+*
+{
+    font-family: sans-serif;
+    color: beige;
+    background-color: black;
+    
+}
+
+#div1
+{
+    margin: 50px;
+    border: 20px solid white;
+    float: left;
+    color: black;
+    background-color: burlywood;
+}
+
+#inline
+{
+    display: inline;
+    background-color: aquamarine;
+}
+
+#inline-block
+{
+    display: inline-block;
+    background-color: yellow; 
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border: 1px solid white;
+}
+
+#click:hover
+{
+    color: blueviolet;
+    cursor: pointer;
+    background-color: aliceblue;
+}
+@media only screen and (min-width: 600px)
+{
+    #div1 {
+        margin: 80px;
+        border: 30px solid white;
+        }
+        }
+        
