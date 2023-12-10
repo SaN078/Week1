@@ -92,3 +92,11 @@ for (let i = 0; i<=10; i++)
     }
     console.log(i);
 }
+
+let x = add(5,6)
+//functions
+function add(a,b){
+    return a+b;
+    console.log("HELLO WORLD");
+    }
+console.log(x);
