@@ -1,0 +1,100 @@
+// Area of Triangle
+
+function areaOftriangle (height,base) 
+{
+    return height * base * 0.5;
+}
+
+
+const area = areaOftriangle(5,6);
+console.log(area);
+
+//  Return Something to Me!
+
+function giveMesomething(something) 
+{
+    return "Something " + something;
+}
+
+const smth = giveMesomething("Dipuuuuu");
+console.log(smth);
+
+//Basketball Points
+
+function basketballPoints (one, three) 
+{
+    return one*1 + three*3;
+}
+
+const point = basketballPoints(15,20);
+console.log(point);
+
+
+//Less Than 100?
+
+function lessthanHundred(x,y) 
+{
+    return x+y < 100 ?  true:false;
+}
+
+
+const numbers = lessthanHundred(50,25);
+console.log(numbers);
+
+//Add up the Numbers from a Single Number
+
+function addUp(limit)
+{
+    let temp_val = 0;
+    while (limit > 0)
+    {
+        temp_val+=limit;
+        limit--;
+    }
+    return temp_val;
+}
+
+const add = addUp(10);
+console.log(add);
+
+//Oddish vs. Evenish
+
+function odd_even (variable)
+{
+    let temp_val = 0;
+    let add = 0;
+    for (let i=0;i<variable.length;i++)
+    {
+        temp_val = variable % 10;
+        add = add + temp_val;
+        variable = variable / 10;
+    }
+    return add % 2 == 0 ? "oddish" : "evenish";
+}
+
+const input = odd_even(52);
+console.log(input);
+
+// Prime number in a range
+
+function primeInrange(lower , higher)
+{
+    let count = 0;
+    for (let i = lower; i <= higher; i++)
+    {
+        for (let x = 2; x < higher;x++)
+        {
+            if (i==1||i==0)
+        {
+            break;
+        }
+        elseif(i%x != 0)
+        {
+            count+=1;
+        }
+        }
+    }
+    return count >= 2 ? false:true;
+}
+
+const prime = primeInrange(20,40)
