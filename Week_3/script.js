@@ -60,18 +60,18 @@ else{
 
 //elseif
 
-// let book = 'Maths';
-// if (book == 'Maths'){
-//     console.log("Maths is my favourite subject");
-// }
-// elseif (book == 'Social')
-// {
-//     console.log("It should not exist");
-// }
-// elseif (book == "Economics")
-// {
-//     console.log('What?');
-// }
+let book = 'Maths';
+if (book == 'Maths'){
+    console.log("Maths is my favourite subject");
+}
+elseif (book == 'Social')
+{
+    console.log("It should not exist");
+}
+elseif (book == "Economics")
+{
+    console.log('What?');
+}
 
 
 //loop
@@ -92,3 +92,5 @@ for (let i = 0; i<=10; i++)
     }
     console.log(i);
 }
+
+
