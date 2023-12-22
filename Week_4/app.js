@@ -98,3 +98,16 @@ function copyArrayandManipulate(array, instructions)
 function multiply2(input) {return input*2;}
 const result =  copyArrayandManipulate([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],multiply2);
 
+
+
+//Tutorial Questions
+
+
+// //Create an array of 10 numbers and print out each element using for
+// loop, foreach loop and map method
+
+const items = [1,2,3,4,5,6,7,8,9,10];
+function iterationFor(array)
+{
+    
+}
