@@ -76,25 +76,26 @@ const input = odd_even(52);
 console.log(input);
 
 // Prime number in a range
-
-function primeInrange(lower , higher)
-{
-    let count = 0;
-    for (let i = lower; i <= higher; i++)
-    {
-        for (let x = 2; x < higher;x++)
-        {
-            if (i==1||i==0)
-        {
-            break;
-        }
-        elseif(i%x != 0)
-        {
-            count+=1;
-        }
+function isPrime(num){
+    if(num<2){
+        return false;
+    }
+    for(let i=2; i<=Math.sqrt(num); i++){
+        if(num%i===0){
+            return false;
         }
     }
-    return count >= 2 ? false:true;
+    return true;
 }
+function primeInRange(n1,n2){
+    for(let i=n1; i<=n2; i++){
+        if(isPrime(i)){
+            return true;
+        }
+    }
+    return false;
+}
+console.log(primeInRange(3,5));
 
 const prime = primeInrange(20,40)
+console.log(prime);
