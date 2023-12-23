@@ -52,7 +52,7 @@ const multiply2 = function (num1,num2){
 }
 
 let res1ult = multiply2(8774563211,7154896635);
-console.log(result);
+console.log(res1ult);
 
 
 //arrow functions
@@ -95,7 +95,7 @@ function copyArrayandManipulate(array, instructions)
     return output;
 }
 
-function multiply2(input) {return input*2;}
+function multiply_2(input) {return input*2;}
 const result =  copyArrayandManipulate([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],multiply2);
 
 
