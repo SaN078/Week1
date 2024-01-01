@@ -199,3 +199,25 @@ console.log(weeklySalary);
 // Get Students with Best Test Avg.
 // Given an object with students and the grades that they made on the tests that they took, determine which student has the best Test Average. The key will be the student's name and the value will be an array of their grades. You will only have to return the student's name. You do not need to return their Test Average.
 
+// function getBestStudent(scores){
+//     let bestAverage = 0;
+//     let bestStudent='';
+ 
+//      for(const student in scores){
+//          const testScore = scores[student];
+//          const average = testScore.reduce((sum, grades) => sum + grades, 0)/testScore.length;
+ 
+//          if (average>bestAverage){
+//              bestAverage = average;
+//              bestStudent = student;
+//          }
+//      }
+//      return bestStudent;
+ 
+//      }
+//      const scores = {
+//          John: [100, 90, 80],
+//          Bob: [100, 70, 80]
+//          };
+//  const bestStudent = getBestStudent(scores);
+//  console.log("The student with the best test average is: " + bestStudent);
